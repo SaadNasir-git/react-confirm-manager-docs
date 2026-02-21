@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+* {
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* Dark theme scrollbar */
+:root {
+  --scrollbar-track: #1e1e1e; /* Very dark grey track color */
+  --scrollbar-thumb: #555; /* Medium grey handle color */
+  --scrollbar-thumb-hover: #777; /* Light grey on hover */
+}
+
+/* Width of the vertical scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Height of the horizontal scrollbar */
+::-webkit-scrollbar:horizontal {
+  height: 12px;
+}
+
+/* The track (background) */
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  padding: 2px;
+}
+
+/* The thumb (draggable handle) */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 8px;
+  border: 3px solid var(--scrollbar-track);
+}
+
+/* Optional: style for when the thumb is hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Corner between vertical and horizontal scrollbars */
+::-webkit-scrollbar-corner {
+  background: var(--scrollbar-track);
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+.sidebar-active{
+  transform: translate(0);
+  transition: all 300ms ease-in-out;
+}
+
+.sidebar-close{
+  transform: translate(-100%);
+  transition: all 300ms ease-in-out;
+}
+
+.transition{
+  transition: all 300ms ease;
+}
+
+h4{
+  @apply text-lg font-bold text-gray-900 dark:text-white p-5
+}
+
+h3{
+  @apply text-xl font-bold text-gray-900 dark:text-white
+}
+
+h2{
+  @apply text-3xl font-bold text-gray-900 dark:text-white
+}
+
+.bg{
+  @apply bg-gray-900/50
+}
+
+section{
+  @apply pt-8 lg:px-4 px-2
+}
+
+p{
+  @apply text-gray-700 dark:text-gray-300 leading-7 p-2
+}
+
+thead{
+  @apply font-bold
+}
+
+table{
+  @apply text-white w-full
+}
+
+td{
+  @apply p-2 border text-center
+}
+
+th{
+  @apply p-2 border text-center
+}

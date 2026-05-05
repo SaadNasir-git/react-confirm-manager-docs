@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/react-confirm-manager/',
+  base: '/react-confirm-manager-docs/',
   plugins: [
     react(),
     tailwindcss()

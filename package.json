@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://SaadNasir-git.github.io/react-confirm-manager",
+  "homepage": "https://saadnasir-git.github.io/react-confirm-manager-docs",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
